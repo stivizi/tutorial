@@ -173,6 +173,139 @@ otamme sen askel kerrallaan.</p>
 <ul>
 <li><strong>Tietokone:</strong> Mikä tahansa tietokone (Mac, Windows tai
 Linux) toimii täydellisesti.</li>
+</ul>
+<h2 id="vaihe-1-vs-koodin-valmistaminen">Vaihe 1: VS-koodin
+valmistaminen 💻</h2>
+<p>Visual Studio Code (VS Code) on kuin superälykäs muistilehtiö koodin
+kirjoittamiseen. Se on ilmainen, ja käytämme sitä puhuaksemme tekoälyn
+kanssa!</p>
+<ol type="1">
+<li><p><strong>Lataa VS-koodi:</strong> Ajattele tätä sovelluksen
+hankkimisena. Siirry VS Coden verkkosivustolle (<a
+href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>)
+internetselaimella (kuten Chrome, Safari tai Firefox). Etsi iso painike
+ladataksesi oikean version tietokoneellesi (Windows, Mac tai
+Linux).</p></li>
+<li><p><strong>Asenna VS-koodi:</strong> Tämä on kuin sovelluksen
+asentaminen tietokoneellesi.</p></li>
+</ol>
+<ul>
+<li><strong>Windows:</strong> Kaksoisnapsauta lataamaasi tiedostoa.
+Ikkuna avautuu - seuraa ohjeita, napsauta “Seuraava” muutaman kerran ja
+sitten “Asenna”.</li>
+<li><strong>Mac:</strong> Kaksoisnapsauta ladattua tiedostoa. Se avaa
+ikkunan. Vedä VS-koodikuvake “Sovellukset”-kansioon.</li>
+<li><strong>Linux:</strong> Asennusprosessi voi vaihdella jakelustasi
+riippuen. Noudata VS Code -sivustolla olevia ohjeita
+järjestelmällesi.</li>
+</ul>
+<ol start="3" type="1">
+<li><p><strong>Käynnistä VS-koodi:</strong> Etsi VS-koodi tietokoneesi
+valikosta (yleensä “Sovellukset”-kohdasta Macissa tai
+“Käynnistä”-valikosta Windowsissa) ja avaa se napsauttamalla sitä. Sinun
+pitäisi nähdä tervetulonäyttö! 🎉</li>
+</ol>
+<h2 id="vaihe-2-clinen-lisääminen-vs-koodiin-the-magic-wand">Vaihe 2:
+Clinen lisääminen VS-koodiin (The Magic Wand! ✨)</h2>
+<p>Cline on kuin taikasauva, jonka avulla VS Code voi puhua tekoälylle.
+Lisää se seuraavasti:</p>
+<ol type="1">
+<li><p><strong>Avaa VS-koodi:</strong> Jos suljit VS-koodin, avaa se
+uudelleen.</p></li>
+<li><p><strong>Etsi Extensions-painike:</strong> Etsi VS-koodin
+vasemmalta puolelta neliökuvaketta, joka on tehty pienemmistä neliöistä.
+Sitä kutsutaan “Laajennukset”-näkymäksi. Voit myös avata sen painamalla
+Ctrl+Shift+X (atau Macissa Cmd+Shift+X).</p></li>
+<li><p><strong>Hae Cline:</strong> Kirjoita Laajennukset-näkymän
+yläreunassa olevaan hakukenttään “Cline”.</p></li>
+<li><p><strong>Asenna Cline:</strong> Näet Cline-laajennuksen
+hakutuloksissa. Sen pitäisi olla Cline-logolla varustettu. Napsauta sen
+vieressä olevaa “Asenna” -painiketta.</p></li>
+<li><p><strong>Lataa VS-koodi uudelleen:</strong> Kun Cline on
+asennettu, VS Code pyytää sinua lataamaan ikkunan uudelleen. Tämä on
+kuin sovelluksen käynnistäminen uudelleen varmistaaksesi, että Cline on
+valmis. Napsauta “Lataa uudelleen” -painiketta.</p></li>
+</ol>
+<h2 id="vaihe-3-yhdistäminen-openrouteriin-the-ai-brain">Vaihe 3:
+Yhdistäminen OpenRouteriin (The AI ​​Brain! 🧠)</h2>
+<p>OpenRouter on kuin portti moniin erilaisiin tekoälyaivoihin. Meidän
+on yhdistettävä Cline OpenRouteriin, jotta se voi esittää kysymyksiä ja
+saada vastauksia.</p>
+<ol type="1">
+<li><p><strong>Luo OpenRouter-tili:</strong> Ajattele tätä avaimena
+tekoälymaailmaan. Avaa Internet-selain ja siirry
+OpenRouter-verkkosivustolle (<a
+href="https://openrouter.ai/">https://openrouter.ai/</a>). Napsauta
+“Rekisteröidy” ja seuraa ohjeita luodaksesi ilmainen tili.</p></li>
+<li><p><strong>Hanki salainen API-avain:</strong> Kun olet kirjautunut
+sisään, vie hiiri profiilikuvasi/kuvakkeen päälle (oikeassa yläkulmassa)
+ja valitse “API-avaimet” tai “Avaimet”. Täällä voit luoda salaisen
+avaimesi. Luo uusi API-avain napsauttamalla painiketta ja anna sille
+projektiisi tai käyttötapaukseen liittyvä nimi.</p></li>
+</ol>
+<ul>
+<li><strong>Tärkeää:</strong> Tämä avain on kuin salasana, joten säilytä
+se turvassa äläkä jaa sitä kenenkään kanssa!</li>
+</ul>
+<ol start="3" type="1">
+<li><strong>Määritä Cline OpenRouterin avulla:</strong> Nyt meidän on
+määritettävä Cline käyttämään OpenRouteria. Toimi seuraavasti:</li>
+</ol>
+<p><img src="setting_openrouter_api.jpg"
+alt="OpenRouter API -määritysnäyttö" /><br> 1. <strong>Aktivoi
+Cline:</strong> Napsauta Cline-kuvaketta VS Coden sivupalkissa.</p>
+<ol start="2" type="1">
+<li><p><strong>Avaa Cline Settings:</strong> Etsi asetusten rataskuvake
+Cline-paneelista.</p></li>
+<li><p><strong>Valitse OpenRouter:</strong> Valitse avattavasta API
+Provider -valikosta “OpenRouter”.</p></li>
+<li><p><strong>Liitä OpenRouter Key:</strong> Kirjoita OpenRouter API
+-avain sille varattuun kenttään.</p></li>
+<li><p><strong>Valitse malli:</strong> Valitse malli avattavasta
+valikosta. Jos olet vasta aloittamassa, kokeile jotakin ilmaisista
+malleista.</p></li>
+<li><p><strong>Valitse (Ota käyttöön) Suunnittele:</strong> Tämä
+määrittää vuorovaikutustilan tekoälyn kanssa.</p></li>
+</ol>
+<h2 id="vaihe-4-esitä-ensimmäinen-kysymyksesi">Vaihe 4: Esitä
+ensimmäinen kysymyksesi! ❓</h2>
+<p>Aika katsoa toimiiko kaikki! Esitämme yksinkertaisen kysymyksen ja
+katsomme, saako Cline vastauksen OpenRouterilta.</p>
+<ol type="1">
+<li><p><strong>Luo uusi tiedosto:</strong> Napsauta VS Codessa viestin
+syöttöruutua ikkunan vasemmassa alakulmassa. (huom</p></li>
+<li><p><strong>Kirjoita kysymyksesi:</strong> Kirjoita nyt seuraava
+kysymys viestin syöttöruutuun: Mikä on Ranskan pääkaupunki?</p></li>
+<li><p><strong>Kysy Clinelta vastausta:</strong> Napsauta
+lähetyskuvaketta</p></li>
+<li><p><strong>Katso vastaus!</strong> Cline lähettää kysymyksesi
+OpenRouterille, ja OpenRouter käyttää tekoälyä löytääkseen vastauksen.
+Vastaus tulee näkyviin yllä olevaan viestiketjuun. Sen pitäisi sanoa
+jotain tällaista: “Ranskan pääkaupunki on Pariisi.” 🎉</p></li>
+</ol>
+<h2 id="teit-sen">Teit sen! 🎉</h2>
+<p>Taputa itseäsi selkään! Olet onnistuneesti määrittänyt VS Coden,
+asentanut Clinen, yhdistäted OpenRouteriin ja esitti ensimmäisen
+tekoälykysymyksesi. Olet virallisesti AI-matkailija!</p>
+<h2 id="mitä-seuraavaksi">Mitä seuraavaksi? 🚀</h2>
+<p>Nyt alkaa todellinen hauskuus! Tässä on muutamia 
+ideoita oppimisen jatkamiseksi:</p>
+<ul>
+<li><p><strong>Kysy lisää kysymyksiä!</strong> Kokeile kysyä Clinelta
+erilaisia ​​kysymyksiä. Mitä tapahtuu, jos pyydät sitä kirjoittamaan
+runon? Tai kääntää lause toiselle kielelle?</p></li>
+<li><p><strong>Tutustu erilaisiin tekoälymalleihin:</strong> OpenRouter
+antaa sinulle pääsyn moniin erilaisiin tekoälyaivoihin. Katso, voitko
+selvittää, kuinka voit vaihtaa niiden välillä ja vertailla heidän
+vastauksiaan.</p></li>
+<li><p><strong>Lue Cline Manual:</strong> Clinella on monia muita
+temppuja hihassaan! Tutustu asiakirjoihin saadaksesi tietoa kaikista
+hienoista asioista, joita se voi tehdä.</p></li>
+</ul>
+<p>Jatka tutkimista, jatka kysymysten esittämistä ja mikä tärkeintä,
+pidä hauskaa!</p>
+</body>
+</html>
 <li><strong>Internet-yhteys:</strong> Tarvitset tämän ladataksesi
 muutaman ilmaisen työkalun.</li>
 <li><strong>Hymy ja osaava asenne!</strong> Oppiminen on hauskaa, ja
