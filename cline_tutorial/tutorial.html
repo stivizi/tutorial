@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code, Cline, and OpenRouter Tutorial</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 2em;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1, h2, h3 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre code {
+            display: block;
+            padding: 1em;
+            overflow-x: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        ul, ol {
+            padding-left: 2em;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        strong {
+            font-weight: bold;
+        }
+        em {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<h1>VS Code, Cline, and OpenRouter: Your First AI Adventure! ✨</h1>
+
+<p>Hello and welcome! This guide will walk you through using VS Code with the Cline extension and OpenRouter to explore the exciting world of AI agents. Don't worry if you've never coded before – we'll take it one step at a time.</p>
+
+<h2>What You'll Need to Get Started 🚀</h2>
+
+<ul>
+<li><strong>A Computer:</strong> Any computer (Mac, Windows, or Linux) will work perfectly.</li>
+<li><strong>Internet Access:</strong> You'll need this to download a couple of free tools.</li>
+<li><strong>A Smile and a Can-Do Attitude!</strong> Learning is fun, and we're here to help.</li>
+</ul>
+
+<h2>Step 1: Getting VS Code Ready 💻</h2>
+
+<p>Visual Studio Code (VS Code) is like a super-smart notepad for writing code. It's free, and we'll use it to talk to AI!</p>
+
+<ol>
+<li><strong>Download VS Code:</strong> Think of this as getting the app. Go to the VS Code website (<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>) using your internet browser (like Chrome, Safari, or Firefox). Find the big button to download the right version for your computer (Windows, Mac, or Linux).</li>
+
+<li><strong>Install VS Code:</strong> This is like setting up the app on your computer.
+    <ul>
+    <li><strong>Windows:</strong> Double-click the file you downloaded. A window will pop up – just follow the instructions, clicking "Next" a few times and then "Install".</li>
+    <li><strong>Mac:</strong> Double-click the downloaded file. It will open a window. Drag the VS Code icon into your "Applications" folder.</li>
+    <li><strong>Linux:</strong> The installation process can vary depending on your distribution. Follow the instructions on the VS Code website for your specific system.</li>
+    </ul>
+</li>
+
+<li><strong>Launch VS Code:</strong> Find VS Code in your computer's menu (usually in "Applications" on a Mac or the "Start" menu on Windows) and click it to open. You should see a welcome screen! 🎉</li>
+</ol>
+
+<h2>Step 2: Adding Cline to VS Code (The Magic Wand! ✨)</h2>
+
+<p>Cline is like a magic wand that lets VS Code talk to AI. Here's how to add it:</p>
+
+<ol>
+<li><strong>Open VS Code:</strong> If you closed VS Code, open it again.</li>
+
+<li><strong>Find the Extensions Button:</strong> Look for a square icon made of smaller squares on the left side of VS Code. It's called the "Extensions" view. You can also press <code>Ctrl+Shift+X</code> (or <code>Cmd+Shift+X</code> on a Mac) to open it.</li>
+
+<li><strong>Search for Cline:</strong> In the search box at the top of the Extensions view, type "Cline".</li>
+
+<li><strong>Install Cline:</strong> You'll see the Cline extension in the search results. It should be the one with the Cline logo. Click the "Install" button next to it.</li>
+
+<li><strong>Reload VS Code:</strong> After Cline installs, VS Code will ask you to "Reload" the window. This is like restarting the app to make sure Cline is ready to go. Click the "Reload" button.</li>
+</ol>
+
+<h2>Step 3: Connecting to OpenRouter (The AI Brain! 🧠)</h2>
+
+<p>OpenRouter is like a gateway to many different AI brains. We need to connect Cline to OpenRouter so it can ask questions and get answers.</p>
+
+<ol>
+<li><strong>Create an OpenRouter Account:</strong> Think of this as getting a key to the AI world. Open your internet browser and go to the OpenRouter website (<a href="https://openrouter.ai/">https://openrouter.ai/</a>). Click on "Sign Up" and follow the instructions to create a free account.</li>
+
+<li><strong>Get Your Secret API Key:</strong> Once you're logged in, hover over your profile image/icon (top right) and select "API Keys" or "Keys". This is where you'll create your secret key. Click the button to generate a new API key and give it a name related to your project or use case.
+    <ul>
+    <li><strong>Important:</strong> This key is like a password, so keep it safe and don't share it with anyone!</li>
+    </ul>
+</li>
+
+<li><strong>Configure Cline with OpenRouter:</strong> Now, we need to set up Cline to use OpenRouter. Follow these steps:
+
+    <img src="setting_openrouter_api.jpg" alt="OpenRouter API configuration screen">
+    <ol>
+    <li><strong>Activate Cline:</strong> Click on the Cline icon in the sidebar of VS Code.</li>
+    
+    <li><strong>Open Cline Settings:</strong> Look for the settings gear icon in the Cline panel.</li>
+    
+    <li><strong>Select OpenRouter:</strong> From the API Provider dropdown, select "OpenRouter".</li>
+    
+    <li><strong>Paste your OpenRouter Key:</strong> Enter your OpenRouter API key in the field provided.</li>
+    
+    <li><strong>Select your model:</strong> Choose a model from the dropdown menu. If you're just starting, try one of the free models.</li>
+    
+    <li><strong>Select (Toggle) to Plan:</strong> This sets up your interaction mode with the AI.</li>
+    </ol>
+</li>	
+</ol>
+
+<h2>Step 4: Asking Your First Question! ❓</h2>
+
+<p>Time to see if everything is working! We'll ask a simple question and see if Cline can get an answer from OpenRouter.</p>
+
+<ol>
+<li><strong>Create a New File:</strong> In VS Code, click on the message input box on the bottom left of the window. (note </li>
+
+<li><strong>Write Your Question:</strong> Now, type the following question into the message input box: What is the capital of France?</li>
+
+<li><strong>Ask Cline to Answer:</strong> Click the send icon</li>
+
+<li><strong>See the Answer!</strong> Cline will send your question to OpenRouter, and OpenRouter will use AI to find the answer. The response will appear in the message thread above. It should say something like: "The capital of France is Paris." 🎉</li>
+</ol>
+
+<h2>You Did It! 🎉</h2>
+
+<p>Give yourself a pat on the back! You've successfully set up VS Code, installed Cline, connected to OpenRouter, and asked your first AI question. You're officially an AI explorer!</p>
+
+<h2>What's Next? 🚀</h2>
+
+<p>Now the real fun begins! Here are a few ideas to keep learning:</p>
+
+<ul>
+<li><strong>Ask More Questions!</strong> Try asking Cline different questions. What happens if you ask it to write a poem? Or translate a sentence into another language?</li>
+
+<li><strong>Explore Different AI Models:</strong> OpenRouter gives you access to lots of different AI brains. See if you can figure out how to switch between them and compare their answers.</li>
+
+<li><strong>Read the Cline Manual:</strong> Cline has many more tricks up its sleeve! Check out the documentation to learn about all the cool things it can do.</li>
+</ul>
+
+<p>Keep exploring, keep asking questions, and most importantly, have fun!</p>
+
+</body>
+</html>
