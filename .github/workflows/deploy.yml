@@ -35,8 +35,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the entire repository content
-          path: '.'
+          # Upload the cline_tutorial directory content
+          path: './cline_tutorial'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
